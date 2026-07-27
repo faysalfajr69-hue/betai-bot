@@ -74,6 +74,7 @@ LEAGUES = {
     "ucl": {"id": 2, "name": "🏆 UEFA Şampiyonlar Ligi"},
     "uel": {"id": 3, "name": "🏆 Avrupa Ligi"},
     "uecl": {"id": 848, "name": "🏆 Konferans Ligi"},
+"hazirlik": {"id": 10, "name": "🌍 Hazırlık Maçları"},
 }
 
 BET_STATUS = {"pending": "⏳ Bekleniyor", "won": "✅ Kazandı", "lost": "❌ Kaybetti"}
