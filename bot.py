@@ -668,7 +668,7 @@ async def run_ai_analysis(update, context, fixture_id):
     context_text = _fixture_context_text(fixture_id, context.chat_data)
     try:
         analysis = ai_analyze_match(context_text)
-    except RuntimeError as e:
+         except Exception as e:
         analysis = f"⚠️ {e}"
     await query.edit_message_text(analysis[:4000], reply_markup=match_detail_menu(fixture_id))
 
@@ -862,7 +862,7 @@ async def handle_ai_chat_text(update, context):
             user_message=user_message,
             history=history,
         )
-    except RuntimeError as e:
+    except Exception as e:
         answer = f"⚠️ {e}"
     history.append({"role": "user", "content": user_message})
     history.append({"role": "assistant", "content": answer})
